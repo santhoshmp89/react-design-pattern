@@ -4,7 +4,7 @@ import { Path } from "../../Constants";
 const LayoutMenus = () => {
   return (
     <div>
-      <ul>
+      <ol>
         <li>
           <Link
             to={generatePath(Path.layout, {
@@ -14,7 +14,16 @@ const LayoutMenus = () => {
             SplitScreen
           </Link>
         </li>
-      </ul>
+        <li>
+          <Link
+            to={generatePath(Path.layout, {
+              article: "list-items"
+            })}
+          >
+            List items
+          </Link>
+        </li>
+      </ol>
     </div>
   );
 };

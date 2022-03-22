@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { generatePath, Link } from "react-router-dom";
+import { Path } from "../../Constants";
 
 const Menus = () => {
   return (
     <div>
       <ul>
         <li>
-          <Link to="layout-component">Layout component</Link>
+          <Link to={generatePath(Path.layout)}>Layout component</Link>
         </li>
       </ul>
     </div>

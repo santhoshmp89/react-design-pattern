@@ -8,6 +8,11 @@ const Menus = () => {
         <li>
           <Link to={generatePath(Path.layout)}>Layout component</Link>
         </li>
+        <li>
+          <Link to={generatePath(Path.uncontrolled)}>
+            Uncontrolled component
+          </Link>
+        </li>
       </ul>
     </div>
   );
